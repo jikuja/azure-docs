@@ -465,7 +465,7 @@ In C# and C# script, access the queue or topic by using a method parameter such 
 
 For creating multiple messages in a C# or C# script function, you can use `ICollector<T>` or `IAsyncCollector<T>`. A message is created when you call the `Add` method.
 
-In JavaScript, access the queue or topic by using `context.bindings.<name>`. `<name>` is the value specified in the `name` property of *function.json*. You can assign a string, a byte array, or a Javascript object (deserialized into JSON) to `context.binding.<name>`.
+In JavaScript, access the queue or topic by using `context.bindings.<name>`. `<name>` is the value specified in the `name` property of *function.json*. You can assign a string, a byte array, or a Javascript object (serialized into JSON) to `context.binding.<name>`.
 
 ## Next steps
 
